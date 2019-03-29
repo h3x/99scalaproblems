@@ -5,7 +5,7 @@
 [debug] resolving dependencies for configuration 'compile'
 [debug] == resolving dependencies for 99problems#99problems$sources;2019.0 [compile]
 [debug] == resolving dependencies 99problems#99problems$sources;2019.0->org.scala-lang#scala-library;2.12.8 [compile->default]
-[debug] sbt-chain: Checking cache for: dependency: org.scala-lang#scala-library;2.12.8 {compile=[default, compile, runtime(*), master(compile), runtime, default(compile), compile(*), master], runtime=[default, compile, runtime(*), master(compile), runtime, default(compile), compile(*), master], test=[default, compile, runtime(*), master(compile), runtime, default(compile), compile(*), master], compile-internal=[default, compile, runtime(*), master(compile), runtime, default(compile), compile(*), master], runtime-internal=[default, compile, runtime(*), master(compile), runtime, default(compile), compile(*), master], test-internal=[default, compile, runtime(*), master(compile), runtime, default(compile), compile(*), master], scala-tool=[default, compile, runtime(*), master(compile), runtime, optional, optional(default), compile(*), master]}
+[debug] sbt-chain: Checking cache for: dependency: org.scala-lang#scala-library;2.12.8 {compile=[default, compile, runtime(*), master(compile), runtime, default(compile), compile(*), master], runtime=[default, compile, runtime(*), master(compile), runtime, default(compile), compile(*), master], test=[default, master(*), compile, runtime(*), master(compile), runtime, default(compile), compile(*), master], compile-internal=[default, compile, runtime(*), master(compile), runtime, default(compile), compile(*), master], runtime-internal=[default, compile, runtime(*), master(compile), runtime, default(compile), compile(*), master], test-internal=[default, master(*), compile, runtime(*), master(compile), runtime, default(compile), compile(*), master], scala-tool=[default, master(*), compile, runtime(*), master(compile), runtime, optional, optional(default), compile(*), master]}
 [debug] sbt-chain: module revision found in cache: org.scala-lang#scala-library;2.12.8
 [debug] 	found org.scala-lang#scala-library;2.12.8 in sbt-chain
 [debug] 	[2.12.8] org.scala-lang#scala-library;2.12.8
@@ -146,6 +146,7 @@
 [debug] == resolving dependencies 99problems#99problems$sources;2019.0->org.scala-lang#scala-library;2.12.8 [compile->master]
 [debug] == resolving dependencies 99problems#99problems$sources;2019.0->org.scala-lang#scala-library;2.12.8 [compile->compile(*)]
 [debug] == resolving dependencies 99problems#99problems$sources;2019.0->org.scala-lang#scala-library;2.12.8 [compile->master]
+[debug] == resolving dependencies 99problems#99problems$sources;2019.0->org.scala-lang#scala-library;2.12.8 [compile->master(*)]
 [debug] == resolving dependencies 99problems#99problems$sources;2019.0->org.scalactic#scalactic_2.12;3.0.5 [compile->default]
 [debug] == resolving dependencies 99problems#99problems$sources;2019.0->org.scalactic#scalactic_2.12;3.0.5 [compile->runtime]
 [debug] == resolving dependencies 99problems#99problems$sources;2019.0->org.scalactic#scalactic_2.12;3.0.5 [compile->compile]
@@ -225,6 +226,7 @@
 [debug] == resolving dependencies 99problems#99problems$sources;2019.0->org.scala-lang#scala-library;2.12.8 [test->runtime]
 [debug] == resolving dependencies 99problems#99problems$sources;2019.0->org.scala-lang#scala-library;2.12.8 [test->compile]
 [debug] == resolving dependencies 99problems#99problems$sources;2019.0->org.scala-lang#scala-library;2.12.8 [test->master]
+[debug] == resolving dependencies 99problems#99problems$sources;2019.0->org.scala-lang#scala-library;2.12.8 [test->master(*)]
 [debug] == resolving dependencies 99problems#99problems$sources;2019.0->org.scala-lang#scala-library;2.12.8 [test->compile]
 [debug] == resolving dependencies 99problems#99problems$sources;2019.0->org.scala-lang#scala-library;2.12.8 [test->runtime(*)]
 [debug] == resolving dependencies 99problems#99problems$sources;2019.0->org.scala-lang#scala-library;2.12.8 [test->compile]
@@ -559,6 +561,7 @@
 [debug] == resolving dependencies 99problems#99problems$sources;2019.0->org.scala-lang#scala-library;2.12.8 [test->runtime]
 [debug] == resolving dependencies 99problems#99problems$sources;2019.0->org.scala-lang#scala-library;2.12.8 [test->compile]
 [debug] == resolving dependencies 99problems#99problems$sources;2019.0->org.scala-lang#scala-library;2.12.8 [test->master]
+[debug] == resolving dependencies 99problems#99problems$sources;2019.0->org.scala-lang#scala-library;2.12.8 [test->master(*)]
 [debug] == resolving dependencies 99problems#99problems$sources;2019.0->org.scala-lang#scala-library;2.12.8 [test->compile]
 [debug] == resolving dependencies 99problems#99problems$sources;2019.0->org.scala-lang#scala-library;2.12.8 [test->runtime(*)]
 [debug] == resolving dependencies 99problems#99problems$sources;2019.0->org.scala-lang#scala-library;2.12.8 [test->compile]
@@ -621,6 +624,7 @@
 [debug] == resolving dependencies 99problems#99problems$sources;2019.0->org.scala-lang#scala-library;2.12.8 [test-internal->runtime]
 [debug] == resolving dependencies 99problems#99problems$sources;2019.0->org.scala-lang#scala-library;2.12.8 [test-internal->compile]
 [debug] == resolving dependencies 99problems#99problems$sources;2019.0->org.scala-lang#scala-library;2.12.8 [test-internal->master]
+[debug] == resolving dependencies 99problems#99problems$sources;2019.0->org.scala-lang#scala-library;2.12.8 [test-internal->master(*)]
 [debug] == resolving dependencies 99problems#99problems$sources;2019.0->org.scala-lang#scala-library;2.12.8 [test-internal->compile]
 [debug] == resolving dependencies 99problems#99problems$sources;2019.0->org.scala-lang#scala-library;2.12.8 [test-internal->runtime(*)]
 [debug] == resolving dependencies 99problems#99problems$sources;2019.0->org.scala-lang#scala-library;2.12.8 [test-internal->compile]
@@ -675,6 +679,7 @@
 [debug] == resolving dependencies 99problems#99problems$sources;2019.0->org.scala-lang#scala-library;2.12.8 [scala-tool->runtime]
 [debug] == resolving dependencies 99problems#99problems$sources;2019.0->org.scala-lang#scala-library;2.12.8 [scala-tool->compile]
 [debug] == resolving dependencies 99problems#99problems$sources;2019.0->org.scala-lang#scala-library;2.12.8 [scala-tool->master]
+[debug] == resolving dependencies 99problems#99problems$sources;2019.0->org.scala-lang#scala-library;2.12.8 [scala-tool->master(*)]
 [debug] == resolving dependencies 99problems#99problems$sources;2019.0->org.scala-lang#scala-library;2.12.8 [scala-tool->compile]
 [debug] == resolving dependencies 99problems#99problems$sources;2019.0->org.scala-lang#scala-library;2.12.8 [scala-tool->runtime(*)]
 [debug] == resolving dependencies 99problems#99problems$sources;2019.0->org.scala-lang#scala-library;2.12.8 [scala-tool->compile]
@@ -723,23 +728,23 @@
 [debug] == resolving dependencies 99problems#99problems$sources;2019.0->jline#jline;2.14.6 [scala-tool->master]
 [debug] 	resolved ivy file produced in cache
 [debug] :: downloading artifacts ::
-[debug] 	[NOT REQUIRED] org.scalactic#scalactic_2.12;3.0.5!scalactic_2.12.jar(src)
-[debug] 	[NOT REQUIRED] org.scala-lang#scala-library;2.12.8!scala-library.jar(src)
-[debug] 	[NOT REQUIRED] org.scala-lang#scala-reflect;2.12.8!scala-reflect.jar(src)
 [debug] 	[NOT REQUIRED] org.scalatest#scalatest_2.12;3.0.5!scalatest_2.12.jar(src)
 [debug] 	[NOT REQUIRED] org.scala-lang.modules#scala-xml_2.12;1.0.6!scala-xml_2.12.jar(src)
+[debug] 	[NOT REQUIRED] org.scala-lang#scala-reflect;2.12.8!scala-reflect.jar(src)
+[debug] 	[NOT REQUIRED] org.scalactic#scalactic_2.12;3.0.5!scalactic_2.12.jar(src)
 [debug] 	[NOT REQUIRED] org.scala-lang#scala-compiler;2.12.8!scala-compiler.jar(src)
+[debug] 	[NOT REQUIRED] org.scala-lang#scala-library;2.12.8!scala-library.jar(src)
 [debug] 	[NOT REQUIRED] jline#jline;2.14.6!jline.jar(src)
-[debug] :: resolution report :: resolve 57ms :: artifacts dl 4ms
-[debug] 	report for 99problems#99problems$sources;2019.0 compile produced in /home/adam/IdeaProjects/99problems/target/scala-2.12/resolution-cache/reports/99problems-99problems$sources-compile.xml
-[debug] 	report for 99problems#99problems$sources;2019.0 runtime produced in /home/adam/IdeaProjects/99problems/target/scala-2.12/resolution-cache/reports/99problems-99problems$sources-runtime.xml
-[debug] 	report for 99problems#99problems$sources;2019.0 test produced in /home/adam/IdeaProjects/99problems/target/scala-2.12/resolution-cache/reports/99problems-99problems$sources-test.xml
-[debug] 	report for 99problems#99problems$sources;2019.0 provided produced in /home/adam/IdeaProjects/99problems/target/scala-2.12/resolution-cache/reports/99problems-99problems$sources-provided.xml
-[debug] 	report for 99problems#99problems$sources;2019.0 optional produced in /home/adam/IdeaProjects/99problems/target/scala-2.12/resolution-cache/reports/99problems-99problems$sources-optional.xml
-[debug] 	report for 99problems#99problems$sources;2019.0 compile-internal produced in /home/adam/IdeaProjects/99problems/target/scala-2.12/resolution-cache/reports/99problems-99problems$sources-compile-internal.xml
-[debug] 	report for 99problems#99problems$sources;2019.0 runtime-internal produced in /home/adam/IdeaProjects/99problems/target/scala-2.12/resolution-cache/reports/99problems-99problems$sources-runtime-internal.xml
-[debug] 	report for 99problems#99problems$sources;2019.0 test-internal produced in /home/adam/IdeaProjects/99problems/target/scala-2.12/resolution-cache/reports/99problems-99problems$sources-test-internal.xml
-[debug] 	report for 99problems#99problems$sources;2019.0 plugin produced in /home/adam/IdeaProjects/99problems/target/scala-2.12/resolution-cache/reports/99problems-99problems$sources-plugin.xml
-[debug] 	report for 99problems#99problems$sources;2019.0 pom produced in /home/adam/IdeaProjects/99problems/target/scala-2.12/resolution-cache/reports/99problems-99problems$sources-pom.xml
-[debug] 	report for 99problems#99problems$sources;2019.0 scala-tool produced in /home/adam/IdeaProjects/99problems/target/scala-2.12/resolution-cache/reports/99problems-99problems$sources-scala-tool.xml
-[debug] 	resolve done (57ms resolve - 4ms download)
+[debug] :: resolution report :: resolve 39ms :: artifacts dl 3ms
+[debug] 	report for 99problems#99problems$sources;2019.0 compile produced in C:\Users\smurf\Documents\scala\99scalaproblems\target\scala-2.12\resolution-cache\reports\99problems-99problems$sources-compile.xml
+[debug] 	report for 99problems#99problems$sources;2019.0 runtime produced in C:\Users\smurf\Documents\scala\99scalaproblems\target\scala-2.12\resolution-cache\reports\99problems-99problems$sources-runtime.xml
+[debug] 	report for 99problems#99problems$sources;2019.0 test produced in C:\Users\smurf\Documents\scala\99scalaproblems\target\scala-2.12\resolution-cache\reports\99problems-99problems$sources-test.xml
+[debug] 	report for 99problems#99problems$sources;2019.0 provided produced in C:\Users\smurf\Documents\scala\99scalaproblems\target\scala-2.12\resolution-cache\reports\99problems-99problems$sources-provided.xml
+[debug] 	report for 99problems#99problems$sources;2019.0 optional produced in C:\Users\smurf\Documents\scala\99scalaproblems\target\scala-2.12\resolution-cache\reports\99problems-99problems$sources-optional.xml
+[debug] 	report for 99problems#99problems$sources;2019.0 compile-internal produced in C:\Users\smurf\Documents\scala\99scalaproblems\target\scala-2.12\resolution-cache\reports\99problems-99problems$sources-compile-internal.xml
+[debug] 	report for 99problems#99problems$sources;2019.0 runtime-internal produced in C:\Users\smurf\Documents\scala\99scalaproblems\target\scala-2.12\resolution-cache\reports\99problems-99problems$sources-runtime-internal.xml
+[debug] 	report for 99problems#99problems$sources;2019.0 test-internal produced in C:\Users\smurf\Documents\scala\99scalaproblems\target\scala-2.12\resolution-cache\reports\99problems-99problems$sources-test-internal.xml
+[debug] 	report for 99problems#99problems$sources;2019.0 plugin produced in C:\Users\smurf\Documents\scala\99scalaproblems\target\scala-2.12\resolution-cache\reports\99problems-99problems$sources-plugin.xml
+[debug] 	report for 99problems#99problems$sources;2019.0 pom produced in C:\Users\smurf\Documents\scala\99scalaproblems\target\scala-2.12\resolution-cache\reports\99problems-99problems$sources-pom.xml
+[debug] 	report for 99problems#99problems$sources;2019.0 scala-tool produced in C:\Users\smurf\Documents\scala\99scalaproblems\target\scala-2.12\resolution-cache\reports\99problems-99problems$sources-scala-tool.xml
+[debug] 	resolve done (39ms resolve - 3ms download)
