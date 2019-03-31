@@ -1,17 +1,59 @@
 [0m[[0m[0minfo[0m] [0m[0m[32mNinetyNineSpec:[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[32mlastElement[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[32m- should return the last element of a list[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[32msecondLastElement[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m- should return the second last element in a list *** FAILED ***[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m- should return the last element of a list *** FAILED ***[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[31m  scala.NotImplementedError: an implementation is missing[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[31m  at scala.Predef$.$qmark$qmark$qmark(Predef.scala:288)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  at problems.NinetyNine$.secondLastElement(NinetyNine.scala:18)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  at problems.NinetyNineSpec.$anonfun$new$3(NinetyNineSpec.scala:20)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at problems.NinetyNine$.lastElement(NinetyNine.scala:10)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at problems.NinetyNineSpec.$anonfun$new$1(NinetyNineSpec.scala:10)[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.OutcomeOf.outcomeOf(OutcomeOf.scala:85)[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.OutcomeOf.outcomeOf$(OutcomeOf.scala:83)[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.Transformer.apply(Transformer.scala:22)[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.Transformer.apply(Transformer.scala:20)[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.FlatSpecLike$$anon$1.apply(FlatSpecLike.scala:1682)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.TestSuite.withFixture(TestSuite.scala:196)[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[31m  ...[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32msecondLastElement[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m- should return the second last element in a list *** FAILED ***[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  scala.NotImplementedError: an implementation is missing[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at scala.Predef$.$qmark$qmark$qmark(Predef.scala:288)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at problems.NinetyNine$.secondLastElement(NinetyNine.scala:15)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at problems.NinetyNineSpec.$anonfun$new$3(NinetyNineSpec.scala:20)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.OutcomeOf.outcomeOf(OutcomeOf.scala:85)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.OutcomeOf.outcomeOf$(OutcomeOf.scala:83)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.Transformer.apply(Transformer.scala:22)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.Transformer.apply(Transformer.scala:20)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.FlatSpecLike$$anon$1.apply(FlatSpecLike.scala:1682)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.TestSuite.withFixture(TestSuite.scala:196)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  ...[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mkthElement[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m- should return the kth element from a list *** FAILED ***[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  scala.NotImplementedError: an implementation is missing[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at scala.Predef$.$qmark$qmark$qmark(Predef.scala:288)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at problems.NinetyNine$.kthElement(NinetyNine.scala:20)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at problems.NinetyNineSpec.$anonfun$new$5(NinetyNineSpec.scala:30)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.OutcomeOf.outcomeOf(OutcomeOf.scala:85)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.OutcomeOf.outcomeOf$(OutcomeOf.scala:83)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.Transformer.apply(Transformer.scala:22)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.Transformer.apply(Transformer.scala:20)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.FlatSpecLike$$anon$1.apply(FlatSpecLike.scala:1682)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.TestSuite.withFixture(TestSuite.scala:196)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  ...[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mlistLength[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m- should return the length of a list *** FAILED ***[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  scala.NotImplementedError: an implementation is missing[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at scala.Predef$.$qmark$qmark$qmark(Predef.scala:288)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at problems.NinetyNine$.listLength(NinetyNine.scala:25)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at problems.NinetyNineSpec.$anonfun$new$7(NinetyNineSpec.scala:39)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.OutcomeOf.outcomeOf(OutcomeOf.scala:85)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.OutcomeOf.outcomeOf$(OutcomeOf.scala:83)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.Transformer.apply(Transformer.scala:22)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.Transformer.apply(Transformer.scala:20)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.FlatSpecLike$$anon$1.apply(FlatSpecLike.scala:1682)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.TestSuite.withFixture(TestSuite.scala:196)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  ...[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mreverseList[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should return a list with elements reversed[0m[0m

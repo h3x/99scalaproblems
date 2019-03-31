@@ -5,13 +5,9 @@ import scala.annotation.tailrec
 object NinetyNine {
 
   // Find the last element of a list.
-  @tailrec
+
   def lastElement[T](list:List[T]):T ={
-    list match {
-      case h :: Nil => h
-      case _ :: tail => lastElement(tail)
-      case _ => throw new NoSuchElementException
-    }
+    ???
   }
 
   // Find the last but one element of a list.
@@ -31,7 +27,6 @@ object NinetyNine {
 
   // Reverse a list.
   def reverseList[T](list:List[T]):List[T] ={
-    ???
   }
 
   // Find out whether a list is a palindrome.
@@ -70,6 +65,8 @@ object NinetyNine {
   def modifiedEncode[T](list:List[T]):List[Any] ={
     ???
   }
+
+
 
 
 }
