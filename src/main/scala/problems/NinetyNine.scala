@@ -5,38 +5,39 @@ import scala.annotation.tailrec
 object NinetyNine {
 
   // Find the last element of a list.
-
   def lastElement[T](list:List[T]):T ={
-    ???
+    list.last
   }
 
   // Find the last but one element of a list.
   def secondLastElement[T](list:List[T]):T ={
-    ???
+    val (result,_) = list.zipWithIndex.filter({ case(x,i) => i ==list.length-2}).head
+    result
   }
 
   // Find the Kth element of a list.
   def kthElement[T](list:List[T], element:Int):T ={
-    ???
+    val (result,_) = list.zipWithIndex.filter({ case(x,i) => i ==element}).head
+    result
   }
 
   // Find the number of elements of a list.
   def listLength[T](list:List[T]):Int ={
-    ???
+    list.length
   }
 
   // Reverse a list.
   def reverseList[T](list:List[T]):List[T] ={
-    ???
+    list.reverse
   }
 
   // Find out whether a list is a palindrome.
   def isPalindrome[T](list:List[T]):Boolean ={
-    ???
+    list == list.reverse
   }
 
   // Flatten a nested list structure.
-  def flatenList[T](list:List[T]):List[Any]={
+  def flatenList[T](list:List[T]):List[Int]={
     ???
   }
 
@@ -44,7 +45,10 @@ object NinetyNine {
   // If a list contains repeated elements they should be replaced with a single copy of the element.
   // The order of the elements should not be changed.
   def noConsecutiveDupes[T](list:List[T]):List[T]={
-    ???
+    list.foldLeft(List():List[T])({
+    case (previous, element) if previous.isEmpty || previous.last != element => previous:::List(element)
+    case (previous, element) => previous
+    })
   }
 
   // Pack consecutive duplicates of list elements into sublists.

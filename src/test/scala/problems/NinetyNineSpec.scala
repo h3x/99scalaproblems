@@ -27,8 +27,8 @@ class NinetyNineSpec extends FlatSpec with Matchers {
   }
 
   "kthElement" should "return the kth element from a list" in {
-    kthElement((1 to 10).toList, 4) should be (3)
-    kthElement(('a' to 'z').toList, 7) should be ('f')
+    kthElement((1 to 10).toList, 4) should be (5)
+    kthElement(('a' to 'z').toList, 7) should be ('h')
 
     assertThrows[NoSuchElementException] {
       kthElement(List(), 0)
