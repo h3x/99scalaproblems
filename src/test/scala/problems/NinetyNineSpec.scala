@@ -77,6 +77,61 @@ class NinetyNineSpec extends FlatSpec with Matchers {
     modifiedEncode(List('a, 'a, 'a, 'a, 'b, 'c, 'c, 'a, 'a, 'd, 'e, 'e, 'e, 'e)) should be (List((4,'a), 'b, (2,'c), (2,'a), 'd, (4,'e)))
   }
 
+  "decode" should "Given a run-length code list generated as specified in problem 'encode', construct its uncompressed version" in {
+    decode(List((4, 'a), (1, 'b), (2, 'c), (2, 'a), (1, 'd), (4, 'e))) should be  (List('a, 'a, 'a, 'a, 'b, 'c, 'c, 'a, 'a, 'd, 'e, 'e, 'e, 'e))
+  }
+
+  "dupe" should "Duplicate the elements of a list num times." in {
+    dupe(2,List('a, 'b, 'c, 'c, 'd)) should be (List('a, 'a, 'b, 'b, 'c, 'c, 'c, 'c, 'd, 'd))
+  }
+
+  "drop" should "Drop every Nth element from a list" in {
+    drop(3, List('a, 'b, 'c, 'd, 'e, 'f, 'g, 'h, 'i, 'j, 'k)) should be  (List('a, 'b, 'd, 'e, 'g, 'h, 'j, 'k))
+  }
+
+  "split" should "Split a list into two parts at num" in {
+    split(3, List('a, 'b, 'c, 'd, 'e, 'f, 'g, 'h, 'i, 'j, 'k)) should be ((List('a, 'b, 'c),List('d, 'e, 'f, 'g, 'h, 'i, 'j, 'k)))
+  }
+
+  "listSlice" should "slice a list from i to j" in {
+    listSlice(3, 7, List('a, 'b, 'c, 'd, 'e, 'f, 'g, 'h, 'i, 'j, 'k)) should be (List('d, 'e, 'f, 'g))
+  }
+
+  "rotate" should "Rotate a list N places to the left." in {
+    rotate(3, List('a, 'b, 'c, 'd, 'e, 'f, 'g, 'h, 'i, 'j, 'k)) should be (List('d, 'e, 'f, 'g, 'h, 'i, 'j, 'k, 'a, 'b, 'c))
+    rotate(-2, List('a, 'b, 'c, 'd, 'e, 'f, 'g, 'h, 'i, 'j, 'k)) should be (List('j, 'k, 'a, 'b, 'c, 'd, 'e, 'f, 'g, 'h, 'i))
+  }
+
+  "removeAt" should "Return the list and the removed element in a Tuple. Elements are numbered from 0" in {
+    removeAt(1, List('a, 'b, 'c, 'd)) should be ((List('a, 'c, 'd),'b))
+  }
+
+  "insertAt" should "Insert an element at a given position into a list" in {
+    insertAt('new, 1, List('a, 'b, 'c, 'd)) should be (List('a, 'new, 'b, 'c, 'd))
+  }
+
+  "_range" should "Create a list containing all integers within a given range." in {
+    _range(4, 9) should be (List(4, 5, 6, 7, 8, 9))
+  }
+
+  "combinations" should "Generate the combinations of K distinct objects chosen from the N elements of a list" in {
+    val c1 = combos(1, List('a,'b,'c))
+    val a1 = List(List('a), List('b), List('c))
+    assert(c1.length == a1.length && c1.toSet == a1.toSet)
+
+    val c2 = combos(2, List('a,'b,'c))
+    val a2 = List(List('a, 'b), List('a, 'c), List('b, 'c))
+    assert(c2.length == a2.length && c2.toSet == a2.toSet)
+
+    val c3 = combos(3, List('a, 'b, 'c, 'd, 'e, 'f))
+    val a3 = List(List('a, 'b, 'c), List('a, 'b, 'd), List('a,
+      'b, 'e), List('a, 'b, 'f), List('a, 'c, 'd), List('a, 'c, 'e), List('a, 'c,
+      'f), List('a, 'd, 'e), List('a, 'd, 'f), List('a, 'e, 'f), List('b, 'c, 'd)
+      , List('b, 'c, 'e), List('b, 'c, 'f), List('b, 'd, 'e), List('b, 'd, 'f), List
+      ('b, 'e, 'f), List('c, 'd, 'e), List('c, 'd, 'f), List('c, 'e, 'f), List(
+        'd, 'e, 'f))
+    assert(c3.length == a3.length && c3.toSet == a3.toSet)
+  }
 
 }
 
