@@ -1,12 +1,19 @@
-val l = List('a', 'b', 'a', 'a', 'b', 'c', 'c', 'a', 'a', 'd', 'e', 'e', 'e', 'e')
-val lsorted = l.sorted
+val list = List('a', 'b', 'c', 'd', 'e', 'f', 'g', 'h')
+
+list.flatMap({ x=> List.fill(5)(x) })
+val i = 5
+
+val (l, _) = list.zipWithIndex.filter({case(e,n) => n % i != i-1 }).unzip
+l
 
 
-lsorted.span(_ == l.head)
+list.splitAt(-2)
 
-def pack(l:List[List[Char]], rem:List[Char]): List[List[Char]] = {
-    rem match {
-      case Nil => l
-      case h::tail => pack( l +: rem.span(_ == h), tail)
-  }
-}
+val j = 2
+val(l1, l2) = list.splitAt(list.length - j)
+l2 ::: l1
+
+val( l3, l4) = list.splitAt(j+1)
+val el = l3.last
+val(l5,l6) = l3.splitAt(l3.length-1)
+(l5 ::: l4, l6.head)

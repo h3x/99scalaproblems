@@ -74,12 +74,16 @@ class NinetyNineSpec extends FlatSpec with Matchers {
   }
 
   "modifiedEncode" should "Modified run-length encoding" in {
-    modifiedEncode(List('a', 'a', 'a', 'a', 'b', 'c', 'c', 'a', 'a', 'd', 'e', 'e', 'e', 'e')) should be (List((4,'a'), 'b, (2,'c'), (2,'a'), 'd', (4,'e')))
+    modifiedEncode(List('a', 'a', 'a', 'a', 'b', 'c', 'c', 'a', 'a', 'd', 'e', 'e', 'e', 'e')) should be (List((4,'a'), 'b', (2,'c'), (2,'a'), 'd', (4,'e')))
   }
 
   "decode" should "Given a run-length code list generated as specified in problem 'encode', construct its uncompressed version" in {
     decode(List((4, 'a'), (1, 'b'), (2, 'c'), (2, 'a'), (1, 'd'), (4, 'e'))) should be  (List('a', 'a', 'a', 'a', 'b', 'c', 'c', 'a', 'a', 'd', 'e', 'e', 'e', 'e'))
   }
+
+  "encodeDirect" should "Modified run-length encoding" in {
+    encodeDirect(List('a', 'a', 'a', 'a', 'b', 'c', 'c', 'a', 'a', 'd', 'e', 'e', 'e', 'e')) should be (List((4,'a'), (1,'b'), (2,'c'), (2,'a'), (1,'d'), (4,'e')))
+}
 
   "dupe" should "Duplicate the elements of a list num times." in {
     dupe(2,List('a', 'b', 'c', 'c', 'd')) should be (List('a', 'a', 'b', 'b', 'c', 'c', 'c', 'c', 'd', 'd'))
