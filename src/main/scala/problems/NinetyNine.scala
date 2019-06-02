@@ -54,7 +54,19 @@ object NinetyNine {
   // Pack consecutive duplicates of list elements into sublists.
   // If a list contains repeated elements they should be placed in separate sublists.
   def dupePacker[T](list:List[T]):List[List[T]] ={
-    ???
+    def recPack(l:List[List[T]], rem:List[T]):List[List[T]] = list match {
+      case Nil => List(List[T]())
+      case h::tail if l.isEmpty => recPack(List(List(h)), tail)
+      case h::tail if h == tail.head => {
+        val x:List[T] = l ::: tail.head
+        recPack(List(), tail.tail)
+      }
+      case h::tail => recPack(List(List(tail.head)), tail)
+
+    }
+
+
+
   }
 
   // Run-length encoding of a list.
